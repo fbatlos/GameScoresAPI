@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="083de42f-9f6b-4181-9552-7557330fe87c" name="Changes" comment="" />
+    <list default="true" id="083de42f-9f6b-4181-9552-7557330fe87c" name="Changes" comment="subida">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameScoresAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameScoresAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/Data/GameScoreContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/Data/GameScoreContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/gamescores.db" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/gamescores.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/gamescores.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/gamescores.db-wal" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,19 +47,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.GameScoresAPI: https.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.GameScoresAPI: IIS Express">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.GameScoresAPI: https">
     <configuration name="GameScoresAPI: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/GameScoresAPI/GameScoresAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -109,6 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741189049234</updated>
       <workItem from="1741189051091" duration="2112000" />
+      <workItem from="1741192231714" duration="1009000" />
     </task>
     <task id="LOCAL-00001" summary="Dockerfile">
       <option name="closed" value="true" />
@@ -118,7 +126,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741190876553</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit bd funcional">
+      <option name="closed" value="true" />
+      <created>1741192378683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741192378683</updated>
+    </task>
+    <task id="LOCAL-00003" summary="subida">
+      <option name="closed" value="true" />
+      <created>1741192485121</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741192485121</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +154,8 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockerfile" />
+    <MESSAGE value="Commit bd funcional" />
+    <MESSAGE value="subida" />
+    <option name="LAST_COMMIT_MESSAGE" value="subida" />
   </component>
 </project>
