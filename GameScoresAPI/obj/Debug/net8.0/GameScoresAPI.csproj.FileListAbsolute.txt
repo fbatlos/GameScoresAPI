@@ -118,3 +118,4 @@ C:\Users\pacob\RiderProjects\GameScoresAPI\GameScoresAPI\obj\Debug\net8.0\refint
 C:\Users\pacob\RiderProjects\GameScoresAPI\GameScoresAPI\obj\Debug\net8.0\GameScoresAPI.pdb
 C:\Users\pacob\RiderProjects\GameScoresAPI\GameScoresAPI\obj\Debug\net8.0\GameScoresAPI.genruntimeconfig.cache
 C:\Users\pacob\RiderProjects\GameScoresAPI\GameScoresAPI\obj\Debug\net8.0\ref\GameScoresAPI.dll
+C:\Users\pacob\RiderProjects\GameScoresAPI\GameScoresAPI\obj\Debug\net8.0\GameScoresAPI.sourcelink.json
