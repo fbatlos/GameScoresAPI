@@ -38,5 +38,10 @@
     "Id": 8,
     "PlayerName": "string",
     "Points": 0
+  },
+  {
+    "Id": 9,
+    "PlayerName": "popopop",
+    "Points": 55670
   }
 ]
