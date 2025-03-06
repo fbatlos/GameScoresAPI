@@ -7,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<GameScoreContext>(options =>
-    options.UseSqlite("Data Source=Data/GameScores.db"));
+    options.UseSqlite("Data Source=Data\\GameScores.db"));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
