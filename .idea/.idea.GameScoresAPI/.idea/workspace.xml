@@ -9,21 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="083de42f-9f6b-4181-9552-7557330fe87c" name="Changes" comment="Intento de migracción">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameScoresAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameScoresAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/gamescores.db" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/gamescores.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/ref/GameScoresAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/ref/GameScoresAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/refint/GameScoresAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/refint/GameScoresAPI.dll" afterDir="false" />
-    </list>
+    <list default="true" id="083de42f-9f6b-4181-9552-7557330fe87c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741189049234</updated>
       <workItem from="1741189051091" duration="2112000" />
-      <workItem from="1741192231714" duration="2626000" />
+      <workItem from="1741192231714" duration="3066000" />
     </task>
     <task id="LOCAL-00001" summary="Dockerfile">
       <option name="closed" value="true" />
@@ -158,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741193403775</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit intento bd">
+      <option name="closed" value="true" />
+      <created>1741195706235</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741195706235</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +167,7 @@
     <MESSAGE value="Commit bd funcional" />
     <MESSAGE value="subida" />
     <MESSAGE value="Intento de migracción" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intento de migracción" />
+    <MESSAGE value="Commit intento bd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit intento bd" />
   </component>
 </project>
