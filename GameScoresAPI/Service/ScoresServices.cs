@@ -14,7 +14,7 @@ namespace GameScoreAPI.Services
     public interface IScoreService
     {
         Task<List<Score>> GetScoresAsync();
-        Task<Score> GetScoreAsync(String name);
+        Task<Score> GetScoreAsync(int id);
         Task<Score> AddScoreAsync(Score score);
     }
 }
@@ -44,10 +44,10 @@ namespace GameScoreAPI.Services
             return JsonConvert.DeserializeObject<List<Score>>(jsonData) ?? new List<Score>();
         }
 
-        public async Task<Score> GetScoreAsync(String name)
+        public async Task<Score> GetScoreAsync(int id)
         {
             var scores = await GetScoresAsync();
-            return scores.FirstOrDefault(s => s.PlayerName == name);
+            return scores.FirstOrDefault(s => s.Id == id);
         }
 
         public async Task<Score> AddScoreAsync(Score score)
@@ -61,7 +61,5 @@ namespace GameScoreAPI.Services
 
             return score;
         }
-        
-        
     }
 }
