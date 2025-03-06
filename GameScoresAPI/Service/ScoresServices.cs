@@ -14,7 +14,7 @@ namespace GameScoreAPI.Services
     public interface IScoreService
     {
         Task<List<Score>> GetScoresAsync();
-        Task<Score> GetScoreAsync(String name);
+        Task<List<Score>> GetScoreAsync(String name);
         Task<Score> AddScoreAsync(Score score);
     }
 }
@@ -41,13 +41,22 @@ namespace GameScoreAPI.Services
             }
 
             var jsonData = await File.ReadAllTextAsync(_filePath);
-            return JsonConvert.DeserializeObject<List<Score>>(jsonData) ?? new List<Score>();
+            var scores =  JsonConvert.DeserializeObject<List<Score>>(jsonData) ?? new List<Score>();
+            return scores.OrderByDescending(s => s.Points).ToList();
         }
 
-        public async Task<Score> GetScoreAsync(String name)
+        public async Task<List<Score>> GetScoreAsync(String name)
         {
             var scores = await GetScoresAsync();
-            return scores.FirstOrDefault(s => s.PlayerName == name);
+            if (scores.FirstOrDefault(s => s.PlayerName == name) == null)
+            {
+                return new List<Score>();
+            }
+            
+            return scores
+                .Where(s => s.PlayerName == name)
+                .OrderByDescending(s => s.Points) 
+                .ToList();
         }
 
         public async Task<Score> AddScoreAsync(Score score)
