@@ -53,20 +53,15 @@ namespace GameScoreAPI.Services
         public async Task<Score> AddScoreAsync(Score score)
         {
             var scores = await GetScoresAsync();
-
-            // Verificar si ya existe una puntuación con el mismo nombre
-            if (scores.Any(s => s.PlayerName == score.PlayerName))
-            {
-                throw new InvalidOperationException($"El jugador {score.PlayerName} ya ha registrado una puntuación.");
-            }
-
             score.Id = scores.Any() ? scores.Max(s => s.Id) + 1 : 1;
             scores.Add(score);
-            
+
             var jsonData = JsonConvert.SerializeObject(scores, Formatting.Indented);
             await File.WriteAllTextAsync(_filePath, jsonData);
 
             return score;
         }
+        
+        
     }
 }

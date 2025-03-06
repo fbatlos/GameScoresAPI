@@ -36,6 +36,8 @@ namespace GameScoreAPI.Controllers
             }
             return Ok(score);
         }
+        
+        
 
         // Agregar una nueva puntuación
         [HttpPost]

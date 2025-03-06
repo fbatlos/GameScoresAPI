@@ -1,12 +1,17 @@
-﻿[
+[
   {
     "Id": 1,
     "PlayerName": "Player1",
-    "Score": 100
+    "Points": 0
   },
   {
     "Id": 2,
     "PlayerName": "Player2",
-    "Score": 200
+    "Points": 0
+  },
+  {
+    "Id": 3,
+    "PlayerName": "paco",
+    "Points": 1230
   }
 ]
