@@ -9,9 +9,9 @@ namespace GameScoreAPI.Data
 
         public GameScoreContext(DbContextOptions<GameScoreContext> options) : base(options) { }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            optionsBuilder.UseSqlite("Data Source=gamescores.db");
         }
     }
 
