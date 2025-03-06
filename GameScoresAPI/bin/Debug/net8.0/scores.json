@@ -1,0 +1,12 @@
+﻿[
+  {
+    "Id": 1,
+    "PlayerName": "Player1",
+    "Score": 100
+  },
+  {
+    "Id": 2,
+    "PlayerName": "Player2",
+    "Score": 200
+  }
+]

@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using GameScoreAPI.Data;
 using GameScoreAPI.Models;
+using GameScoreAPI.Services;
 
 namespace GameScoreAPI.Controllers
 {
@@ -11,39 +10,39 @@ namespace GameScoreAPI.Controllers
     [ApiController]
     public class ScoresController : ControllerBase
     {
-        private readonly GameScoreContext _context;
+        private readonly IScoreService _scoreService;
 
-        public ScoresController(GameScoreContext context)
+        public ScoresController(IScoreService scoreService)
         {
-            _context = context;
+            _scoreService = scoreService;
         }
 
         // Obtener todas las puntuaciones
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Score>>> GetScores()
         {
-            return await _context.Scores.ToListAsync();
+            var scores = await _scoreService.GetScoresAsync();
+            return Ok(scores);
         }
 
         // Obtener una puntuación por ID
         [HttpGet("{id}")]
         public async Task<ActionResult<Score>> GetScore(int id)
         {
-            var score = await _context.Scores.FindAsync(id);
+            var score = await _scoreService.GetScoreAsync(id);
             if (score == null)
             {
                 return NotFound();
             }
-            return score;
+            return Ok(score);
         }
 
         // Agregar una nueva puntuación
         [HttpPost]
         public async Task<ActionResult<Score>> PostScore(Score score)
         {
-            _context.Scores.Add(score);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetScore), new { id = score.Id }, score);
+            var newScore = await _scoreService.AddScoreAsync(score);
+            return CreatedAtAction(nameof(GetScore), new { id = newScore.Id }, newScore);
         }
     }
 }
