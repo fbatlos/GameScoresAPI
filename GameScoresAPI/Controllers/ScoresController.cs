@@ -27,9 +27,9 @@ namespace GameScoreAPI.Controllers
 
         // Obtener una puntuación por ID
         [HttpGet("{id}")]
-        public async Task<ActionResult<Score>> GetScore(int id)
+        public async Task<ActionResult<Score>> GetScore(String name)
         {
-            var score = await _scoreService.GetScoreAsync(id);
+            var score = await _scoreService.GetScoreAsync(name);
             if (score == null)
             {
                 return NotFound();
