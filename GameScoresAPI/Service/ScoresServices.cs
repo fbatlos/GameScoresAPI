@@ -1,74 +1,75 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using GameScoreAPI.Models;
+using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 using GameScoreAPI.Models;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using GameScoreAPI.Models;
-using Microsoft.Extensions.Hosting;
-using Newtonsoft.Json;
+using GameScoreAPI.Services.GameScoreAPI.Services;
 
 namespace GameScoreAPI.Services
 {
-    public interface IScoreService
+    
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+
+    namespace GameScoreAPI.Services
     {
-        Task<List<Score>> GetScoresAsync();
-        Task<List<Score>> GetScoreAsync(String name);
-        Task<Score> AddScoreAsync(Score score);
+        public interface IScoreService
+        {
+            Task<List<Score>> GetScoresAsync();         // Obtener todas las puntuaciones
+            Task<List<Score>> GetScoreAsync(string name); // Obtener puntuaciones por nombre de jugador
+            Task<Score> AddScoreAsync(Score score);       // Agregar una nueva puntuación
+            Task<Score?> GetScoreByIdAsync(string id);    // Obtener una puntuación por ID
+            Task<bool> UpdateScoreAsync(string id, Score updatedScore); // Actualizar una puntuación
+            Task<bool> DeleteScoreAsync(string id);      // Eliminar una puntuación
+        }
     }
-}
 
-
-
-namespace GameScoreAPI.Services
-{
+    
     public class ScoreService : IScoreService
     {
-        private readonly string _filePath;
+        private readonly IMongoCollection<Score> _scoreCollection;
 
-        public ScoreService(IHostEnvironment environment)
+        public ScoreService(IOptions<MongoDBSettings> mongoSettings)
         {
-            // Define la ruta al archivo JSON
-            _filePath = Path.Combine(environment.ContentRootPath, "scores.json");
+            var client = new MongoClient(mongoSettings.Value.ConnectionString);
+            var database = client.GetDatabase(mongoSettings.Value.DatabaseName);
+            _scoreCollection = database.GetCollection<Score>("scores");
         }
 
         public async Task<List<Score>> GetScoresAsync()
         {
-            if (!File.Exists(_filePath))
-            {
-                return new List<Score>();
-            }
-
-            var jsonData = await File.ReadAllTextAsync(_filePath);
-            var scores =  JsonConvert.DeserializeObject<List<Score>>(jsonData) ?? new List<Score>();
-            return scores.OrderByDescending(s => s.Points).ToList();
+            return await _scoreCollection.Find(_ => true)
+                .SortByDescending(s => s.Points)
+                .ToListAsync();
         }
 
-        public async Task<List<Score>> GetScoreAsync(String name)
+        public async Task<List<Score>> GetScoreAsync(string name)
         {
-            var scores = await GetScoresAsync();
-            if (scores.FirstOrDefault(s => s.PlayerName == name) == null)
-            {
-                return new List<Score>();
-            }
-            
-            return scores
-                .Where(s => s.PlayerName == name)
-                .OrderByDescending(s => s.Points) 
-                .ToList();
+            return await _scoreCollection.Find(s => s.PlayerName == name)
+                .SortByDescending(s => s.Points)
+                .ToListAsync();
+        }
+
+        public async Task<Score?> GetScoreByIdAsync(string id)
+        {
+            return await _scoreCollection.Find(s => s.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<Score> AddScoreAsync(Score score)
         {
-            var scores = await GetScoresAsync();
-            score.Id = scores.Any() ? scores.Max(s => s.Id) + 1 : 1;
-            scores.Add(score);
-
-            var jsonData = JsonConvert.SerializeObject(scores, Formatting.Indented);
-            await File.WriteAllTextAsync(_filePath, jsonData);
-
+            await _scoreCollection.InsertOneAsync(score);
             return score;
+        }
+
+        public async Task<bool> UpdateScoreAsync(string id, Score updatedScore)
+        {
+            var result = await _scoreCollection.ReplaceOneAsync(s => s.Id == id, updatedScore);
+            return result.ModifiedCount > 0;
+        }
+
+        public async Task<bool> DeleteScoreAsync(string id)
+        {
+            var result = await _scoreCollection.DeleteOneAsync(s => s.Id == id);
+            return result.DeletedCount > 0;
         }
     }
 }

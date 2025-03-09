@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using GameScoreAPI.Models;
 
+//Esto era usado para la conexión con la bd local
+
 namespace GameScoreAPI.Data
 {
     public class GameScoreContext : DbContext

@@ -9,7 +9,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="083de42f-9f6b-4181-9552-7557330fe87c" name="Changes" comment="" />
+    <list default="true" id="083de42f-9f6b-4181-9552-7557330fe87c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/GameScoresAPI/MongoDBSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameScoresAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameScoresAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/Controllers/ScoresController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/Controllers/ScoresController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/GameScoresAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/GameScoresAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/Models/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/Models/Score.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/Service/ScoresServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/Service/ScoresServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/GameScoresAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/bin/Debug/net8.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/GameScoresAPI.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/ref/GameScoresAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/ref/GameScoresAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/refint/GameScoresAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/Debug/net8.0/refint/GameScoresAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/GameScoresAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/GameScoresAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/GameScoresAPI.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/GameScoresAPI.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameScoresAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/GameScoresAPI/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,19 +74,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.GameScoresAPI: https.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.GameScoresAPI: https.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.GameScoresAPI: https">
     <configuration name="GameScoresAPI: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/GameScoresAPI/GameScoresAPI.csproj" />
@@ -111,6 +144,8 @@
       <updated>1741189049234</updated>
       <workItem from="1741189051091" duration="2112000" />
       <workItem from="1741192231714" duration="3066000" />
+      <workItem from="1741297553784" duration="4140000" />
+      <workItem from="1741529923956" duration="1298000" />
     </task>
     <task id="LOCAL-00001" summary="Dockerfile">
       <option name="closed" value="true" />

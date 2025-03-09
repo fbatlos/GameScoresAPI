@@ -1,10 +1,12 @@
-using GameScoreAPI.Data;
 using GameScoreAPI.Services;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using GameScoreAPI.Models;
+using GameScoreAPI.Services.GameScoreAPI.Services;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.Configure<MongoDBSettings>(
+    builder.Configuration.GetSection("MongoDB"));
 
 builder.Services.AddSingleton<IScoreService, ScoreService>();
 

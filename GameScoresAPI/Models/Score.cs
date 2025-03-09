@@ -1,11 +1,18 @@
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace GameScoreAPI.Models
 {
     public class Score
     {
-        public int Id { get; set; }
-        public string PlayerName { get; set; } = string.Empty;
-        public int Points { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]  // Permite manejar el Id como string en C#
+        public string Id { get; set; } = string.Empty;
 
-        //public DateTime Date { get; set; } = DateTime.UtcNow;
+        [BsonElement("playerName")] // Nombre del campo en la colección MongoDB
+        public string PlayerName { get; set; } = string.Empty;
+
+        [BsonElement("points")]
+        public int Points { get; set; }
     }
 }
