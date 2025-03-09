@@ -22,4 +22,4 @@ En resumen, la implementación de la API con MongoDB ha demostrado ser la opció
 
 Cabe aclarar que el juego se encuentra en la rama master : 
 
-  (Enlace gitJuego)[]
+  (Enlace gitJuego)[https://github.com/fbatlos/godot-Prueba.git]
